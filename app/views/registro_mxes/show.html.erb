@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @registro_mx %>
+
+<div>
+  <%= link_to "Edit this registro mx", edit_registro_mx_path(@registro_mx) %> |
+  <%= link_to "Back to registro mxes", registro_mxes_path %>
+
+  <%= button_to "Destroy this registro mx", @registro_mx, method: :delete %>
+</div>

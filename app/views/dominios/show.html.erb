@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @dominio %>
+
+<div>
+  <%= link_to "Edit this dominio", edit_dominio_path(@dominio) %> |
+  <%= link_to "Back to dominios", dominios_path %>
+
+  <%= button_to "Destroy this dominio", @dominio, method: :delete %>
+</div>

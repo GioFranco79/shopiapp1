@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  servicio: MyString
+  protocolo: MyString
+  nombre: MyString
+  objetivo: MyString
+  prioridad: 1
+  peso: 1
+  puerto: 1
+
+two:
+  servicio: MyString
+  protocolo: MyString
+  nombre: MyString
+  objetivo: MyString
+  prioridad: 1
+  peso: 1
+  puerto: 1

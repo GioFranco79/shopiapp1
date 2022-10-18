@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @registro_txt %>
+
+<div>
+  <%= link_to "Edit this registro txt", edit_registro_txt_path(@registro_txt) %> |
+  <%= link_to "Back to registro txts", registro_txts_path %>
+
+  <%= button_to "Destroy this registro txt", @registro_txt, method: :delete %>
+</div>

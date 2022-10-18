@@ -10,9 +10,63 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_10_13_193455) do
+ActiveRecord::Schema[7.0].define(version: 2022_10_18_201830) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "dominios", force: :cascade do |t|
+    t.string "nombre"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "registro_aaaas", force: :cascade do |t|
+    t.string "nombre"
+    t.string "redirige"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "registro_as", force: :cascade do |t|
+    t.string "nombre"
+    t.string "redirige"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "registro_cnames", force: :cascade do |t|
+    t.string "nombre"
+    t.string "redirige"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "registro_mxes", force: :cascade do |t|
+    t.string "nombre"
+    t.string "redirige"
+    t.integer "prioridad"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "registro_srvs", force: :cascade do |t|
+    t.string "servicio"
+    t.string "protocolo"
+    t.string "nombre"
+    t.string "objetivo"
+    t.integer "prioridad"
+    t.integer "peso"
+    t.integer "puerto"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "registro_txts", force: :cascade do |t|
+    t.string "nombre"
+    t.string "valor"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "shops", force: :cascade do |t|
     t.string "shopify_domain", null: false

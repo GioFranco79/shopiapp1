@@ -1,0 +1,2 @@
+class RegistroCname < ApplicationRecord
+end

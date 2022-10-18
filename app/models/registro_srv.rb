@@ -1,0 +1,2 @@
+class RegistroSrv < ApplicationRecord
+end

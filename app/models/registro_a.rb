@@ -1,0 +1,2 @@
+class RegistroA < ApplicationRecord
+end

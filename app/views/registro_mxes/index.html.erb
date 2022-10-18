@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Registro mxes</h1>
+
+<div id="registro_mxes">
+  <% @registro_mxes.each do |registro_mx| %>
+    <%= render registro_mx %>
+    <p>
+      <%= link_to "Show this registro mx", registro_mx %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New registro mx", new_registro_mx_path %>

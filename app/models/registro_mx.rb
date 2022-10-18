@@ -1,0 +1,2 @@
+class RegistroMx < ApplicationRecord
+end

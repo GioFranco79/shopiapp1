@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Registro srvs</h1>
+
+<div id="registro_srvs">
+  <% @registro_srvs.each do |registro_srv| %>
+    <%= render registro_srv %>
+    <p>
+      <%= link_to "Show this registro srv", registro_srv %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New registro srv", new_registro_srv_path %>

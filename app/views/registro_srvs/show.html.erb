@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @registro_srv %>
+
+<div>
+  <%= link_to "Edit this registro srv", edit_registro_srv_path(@registro_srv) %> |
+  <%= link_to "Back to registro srvs", registro_srvs_path %>
+
+  <%= button_to "Destroy this registro srv", @registro_srv, method: :delete %>
+</div>

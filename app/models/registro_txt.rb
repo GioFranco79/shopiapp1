@@ -1,0 +1,2 @@
+class RegistroTxt < ApplicationRecord
+end

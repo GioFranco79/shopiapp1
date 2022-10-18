@@ -1,0 +1,27 @@
+<%= form_with(model: registro_a) do |form| %>
+  <% if registro_a.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(registro_a.errors.count, "error") %> prohibited this registro_a from being saved:</h2>
+
+      <ul>
+        <% registro_a.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :nombre, style: "display: block" %>
+    <%= form.text_field :nombre %>
+  </div>
+
+  <div>
+    <%= form.label :redirige, style: "display: block" %>
+    <%= form.text_field :redirige %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

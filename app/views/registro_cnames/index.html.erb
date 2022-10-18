@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Registro cnames</h1>
+
+<div id="registro_cnames">
+  <% @registro_cnames.each do |registro_cname| %>
+    <%= render registro_cname %>
+    <p>
+      <%= link_to "Show this registro cname", registro_cname %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New registro cname", new_registro_cname_path %>
